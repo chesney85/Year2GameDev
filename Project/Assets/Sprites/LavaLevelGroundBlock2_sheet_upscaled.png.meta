@@ -1,0 +1,255 @@
+fileFormatVersion: 2
+guid: abecdd368b082df4faa5d69369b63882
+timeCreated: 1506429030
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LavaLevelGroundBlock2_sheet_upscaled_0
+    21300002: LavaLevelGroundBlock2_sheet_upscaled_1
+    21300004: LavaLevelGroundBlock2_sheet_upscaled_2
+    21300006: LavaLevelGroundBlock2_sheet_upscaled_3
+    21300008: LavaLevelGroundBlock2_sheet_upscaled_4
+    21300010: LavaLevelGroundBlock2_sheet_upscaled_5
+    21300012: LavaLevelGroundBlock2_sheet_upscaled_6
+    21300014: LavaLevelGroundBlock2_sheet_upscaled_7
+    21300016: LavaLevelGroundBlock2_sheet_upscaled_8
+    21300018: LavaLevelGroundBlock2_sheet_upscaled_9
+    21300020: LavaLevelGroundBlock2_sheet_upscaled_10
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LavaLevelGroundBlock2_sheet_upscaled_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 515
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LavaLevelGroundBlock2_sheet_upscaled_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 515
+        width: 96
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LavaLevelGroundBlock2_sheet_upscaled_2
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 515
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LavaLevelGroundBlock2_sheet_upscaled_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 413
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LavaLevelGroundBlock2_sheet_upscaled_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 413
+        width: 96
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LavaLevelGroundBlock2_sheet_upscaled_5
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 413
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LavaLevelGroundBlock2_sheet_upscaled_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 311
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LavaLevelGroundBlock2_sheet_upscaled_7
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 311
+        width: 96
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LavaLevelGroundBlock2_sheet_upscaled_8
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 311
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LavaLevelGroundBlock2_sheet_upscaled_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 209
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LavaLevelGroundBlock2_sheet_upscaled_10
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 209
+        width: 96
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
