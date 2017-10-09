@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4358688474857470}
   - component: {fileID: 212340974417755840}
   - component: {fileID: 95136310949334798}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FlyingBlock1x1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4868254967215780}
   - component: {fileID: 212361763705263716}
   - component: {fileID: 95011722632240872}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FlyingBlock1x1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4961473941325908}
   - component: {fileID: 61036875551526320}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FlyingBlock1x4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 4872387176864758}
   - component: {fileID: 212654496153497086}
   - component: {fileID: 95123120862370248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FlyingBlock1x1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 4731032584690482}
   - component: {fileID: 212930590833213790}
   - component: {fileID: 95909243672209950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FlyingBlock1x1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

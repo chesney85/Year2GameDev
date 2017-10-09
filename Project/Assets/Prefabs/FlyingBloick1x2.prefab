@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4801584641439962}
   - component: {fileID: 212337941475808514}
   - component: {fileID: 95469889488693694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FlyingBlock1x1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4292267327963128}
   - component: {fileID: 212452610525375062}
   - component: {fileID: 95689811238637480}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FlyingBlock1x1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4452230050553996}
   - component: {fileID: 61805669202083638}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FlyingBloick1x2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

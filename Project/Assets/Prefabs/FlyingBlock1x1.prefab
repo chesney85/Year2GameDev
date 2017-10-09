@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212431361222153882}
   - component: {fileID: 95929652392613116}
   - component: {fileID: 61762358342961890}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FlyingBlock1x1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
