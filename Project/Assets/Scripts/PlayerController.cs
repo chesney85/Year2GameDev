@@ -71,4 +71,11 @@ public class PlayerController : MonoBehaviour {
 		//set the animation bool equal to character position if on ground or not
 		myAnim.SetBool ("Grounded", isGrounded);
 	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.tag == "KillPlane") {
+			gameObject.SetActive (false);
+		}
+	}
 }
