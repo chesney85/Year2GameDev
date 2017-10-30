@@ -23,12 +23,23 @@ public class PlayerController : MonoBehaviour {
 	//declare an animator for sprites
 	private Animator myAnim;
 
+	//variable for checkpoint position
+	public Vector3 respawnPosition;
+
+	//instance of LevelManager
+	public LevelManager theLevelManager;
+
 	// Use this for initialization
 	void Start () {
 		//tells unity that myRigidBody is equal to the rigidbody on player
 		myRigidBody = GetComponent<Rigidbody2D> ();
 		//tells unity myAnim is equal to the animator on player
 		myAnim = GetComponent<Animator> ();
+
+		//startin position
+		respawnPosition = transform.position;
+
+		theLevelManager = FindObjectOfType<LevelManager> ();
 		
 	}
 	
@@ -75,7 +86,16 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "KillPlane") {
-			gameObject.SetActive (false);
+			//gameObject.SetActive (false);
+
+			//transform.position = respawnPosition;
+
+			theLevelManager.Respawn ();
+		}
+
+		if (other.tag == "Checkpoint") {
+			
+			respawnPosition = other.transform.position;
 		}
 	}
 }
