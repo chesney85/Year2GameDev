@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour {
 		//startin position
 		respawnPosition = transform.position;
 
+		//find the level manager attatched to player object
 		theLevelManager = FindObjectOfType<LevelManager> ();
 		
 	}

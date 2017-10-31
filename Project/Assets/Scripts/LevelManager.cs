@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour {
 	//instance of the playerController Script
 	public PlayerController thePlayer;
 
+	public GameObject deathSplosion;
 
 
 	// Use this for initialization
@@ -32,7 +33,10 @@ public class LevelManager : MonoBehaviour {
 	//Co-Routine
 	public IEnumerator RespawnCo(){
 
+		//player turns invisible
 		thePlayer.gameObject.SetActive (false);
+		//once player invisible run particle for death
+		Instantiate (deathSplosion, thePlayer.transform.position, thePlayer.transform.rotation);
 
 		//tells the game to wait before running next line of code
 		yield return new WaitForSeconds (waitToRespawn);
