@@ -10,7 +10,11 @@ public class LevelManager : MonoBehaviour {
 	//instance of the playerController Script
 	public PlayerController thePlayer;
 
+	//particle effect when player dies
 	public GameObject deathSplosion;
+
+	//keep track of coins collected
+	public int coinCount;
 
 
 	// Use this for initialization
@@ -43,5 +47,12 @@ public class LevelManager : MonoBehaviour {
 
 		thePlayer.transform.position = thePlayer.respawnPosition;
 		thePlayer.gameObject.SetActive (true);
+	}
+
+	public void AddCoins(int coinsToAdd){
+		
+		coinCount += coinsToAdd;
+
+
 	}
 }

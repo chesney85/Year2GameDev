@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class CheckpointController : MonoBehaviour {
 
+	//public variables will be set in the unity editor as drag and drop
 	public Sprite flagClosed;
 	public Sprite flagOpen;
 
+	//declare a sprite renderer
 	private SpriteRenderer theSpriteRenderer;
 
 	public bool checkpointActive;
@@ -21,7 +23,7 @@ public class CheckpointController : MonoBehaviour {
 	void Update () {
 		
 	}
-
+	//if player touches the flag then change the sprite
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "Player") {

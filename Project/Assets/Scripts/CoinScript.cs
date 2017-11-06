@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class CoinScript : MonoBehaviour {
 
-public class HurtPlayer : MonoBehaviour {
+	private LevelManager theLevelManager;
 
-	public LevelManager theLevelManager;
+	public int coinValue;
+
 	// Use this for initialization
 	void Start () {
 		theLevelManager = FindObjectOfType<LevelManager> ();
@@ -13,13 +15,17 @@ public class HurtPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		
 	}
 
-	void OnTriggerEnter2D(Collider2D other)
-	{
+	void OnTriggerEnter2D(Collider2D other){
+
 		if (other.tag == "Player") {
-			theLevelManager.Respawn ();
+
+			theLevelManager.AddCoins (coinValue);
+
+			Destroy (gameObject);
 		}
 	}
 }
