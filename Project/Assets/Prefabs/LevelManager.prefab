@@ -55,3 +55,13 @@ MonoBehaviour:
   thePlayer: {fileID: 0}
   deathSplosion: {fileID: 1641217827191388, guid: 39c2017606cd2a7479ab23d8afc4c048,
     type: 2}
+  coinCount: 0
+  coinText: {fileID: 0}
+  heart1: {fileID: 0}
+  heart2: {fileID: 0}
+  heart3: {fileID: 0}
+  heartFull: {fileID: 21300714, guid: e6ef72d28a8f0f94ba35c2a8d3f0e03a, type: 3}
+  heartHalf: {fileID: 21300716, guid: e6ef72d28a8f0f94ba35c2a8d3f0e03a, type: 3}
+  heartEmpty: {fileID: 21300718, guid: e6ef72d28a8f0f94ba35c2a8d3f0e03a, type: 3}
+  maxHealth: 6
+  healthCount: 0

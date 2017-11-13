@@ -21,6 +21,10 @@ GameObject:
   - component: {fileID: 4812537695254482}
   - component: {fileID: 212583292514029088}
   - component: {fileID: 95380642665572412}
+  - component: {fileID: 58578705097070888}
+  - component: {fileID: 114791079136680024}
+  - component: {fileID: 114797804574652362}
+  - component: {fileID: 114074358829915384}
   m_Layer: 0
   m_Name: SpinSaw
   m_TagString: Untagged
@@ -34,13 +38,28 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1405450147132942}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.1, y: -9, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.178959, y: -4.591406, z: -0.5625}
   m_LocalScale: {x: 5.07009, y: 5.0700917, z: 5.0700917}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58578705097070888
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1405450147132942}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.41
 --- !u!95 &95380642665572412
 Animator:
   serializedVersion: 3
@@ -58,6 +77,46 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114074358829915384
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1405450147132942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faa0dbd77895f54cbc9bbb457cd5616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 1.1
+--- !u!114 &114791079136680024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1405450147132942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffb43c0efab3c424ea9ccd787ccf3182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToMove: {fileID: 1405450147132942}
+  startPoints: {fileID: 0}
+  endPoints: {fileID: 0}
+  moveSpeed: 10
+--- !u!114 &114797804574652362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1405450147132942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b8cf57876d636f4e95c949790c9347c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
+  theLevelManager: {fileID: 0}
 --- !u!212 &212583292514029088
 SpriteRenderer:
   m_ObjectHideFlags: 1
