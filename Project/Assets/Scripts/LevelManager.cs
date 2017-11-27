@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
@@ -17,6 +18,8 @@ public class LevelManager : MonoBehaviour {
 	//keep track of coins collected
 	public int coinCount;
 
+	private Animator myAnim;
+
 	//UI text element to count coins collected
 	public Text coinText;
 
@@ -26,7 +29,6 @@ public class LevelManager : MonoBehaviour {
 	public Image heart3;
 
 	public Sprite heartFull;
-	public Sprite heartHalf;
 	public Sprite heartEmpty;
 
 	public int maxHealth;
@@ -34,15 +36,20 @@ public class LevelManager : MonoBehaviour {
 
 	private bool respawning;
 
+	public GameObject Death;
+
+
+
 	// Use this for initialization
 	void Start () 
 	{
 		//find object in screen that has playerController script atttatched to it
 		thePlayer = FindObjectOfType<PlayerController> ();
 
-		coinText.text = "Coins: " + coinCount;
+		coinText.text = "Coins to collect: " + coinCount;
 
 		healthCount = maxHealth;
+
 	}
 	
 	// Update is called once per frame
@@ -74,19 +81,26 @@ public class LevelManager : MonoBehaviour {
 		//tells the game to wait before running next line of code
 		yield return new WaitForSeconds (waitToRespawn);
 
-		healthCount = maxHealth;
-		respawning = false;
-		UpdateHeartMeter ();
+		Time.timeScale = 0;
+//		SceneManager.LoadScene ("lavaLevel");
 
-		thePlayer.transform.position = thePlayer.respawnPosition;
-		thePlayer.gameObject.SetActive (true);
+		Death.SetActive (true);
+//
+//		healthCount = maxHealth;
+//		respawning = false;
+//		UpdateHeartMeter ();
+//
+//		thePlayer.transform.position = thePlayer.respawnPosition;
+//		thePlayer.gameObject.SetActive (true);
+
+
 	}
 
 	public void AddCoins(int coinsToAdd)
 	{
 		
-		coinCount += coinsToAdd;
-		coinText.text = "Coins: " + coinCount;
+		coinCount -= coinsToAdd;
+		coinText.text = "Coins to collect: " + coinCount;
 
 	}
 
@@ -100,38 +114,21 @@ public class LevelManager : MonoBehaviour {
 	{
 		switch (healthCount)
 		{
-		case 6:
+
+		case 3:
 			heart1.sprite = heartFull;
 			heart2.sprite = heartFull;
 			heart3.sprite = heartFull;
 			return;
-		
-		case 5:
-			heart1.sprite = heartFull;
-			heart2.sprite = heartFull;
-			heart3.sprite = heartHalf;
-			return;
-
-		case 4:
-			heart1.sprite = heartFull;
-			heart2.sprite = heartFull;
-			heart3.sprite = heartEmpty;
-			return;
-
-		case 3:
-			heart1.sprite = heartFull;
-			heart2.sprite = heartHalf;
-			heart3.sprite = heartEmpty;
-			return;
 
 		case 2:
 			heart1.sprite = heartFull;
-			heart2.sprite = heartEmpty;
+			heart2.sprite = heartFull;
 			heart3.sprite = heartEmpty;
 			return;
 
 		case 1:
-			heart1.sprite = heartHalf;
+			heart1.sprite = heartFull;
 			heart2.sprite = heartEmpty;
 			heart3.sprite = heartEmpty;
 			return;

@@ -23,11 +23,18 @@ public class PlayerController : MonoBehaviour {
 	//declare an animator for sprites
 	private Animator myAnim;
 
+	public RuntimeAnimatorController anim1;
+	public RuntimeAnimatorController anim2;
+	public RuntimeAnimatorController anim3;
+
 	//variable for checkpoint position
 	public Vector3 respawnPosition;
 
 	//instance of LevelManager
 	public LevelManager theLevelManager;
+
+	public AudioSource jumpSound;
+
 
 	// Use this for initialization
 	void Start () {
@@ -75,6 +82,8 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetButtonDown("Jump") && isGrounded) {
 			//x axis stays same, y axis is jump speed, x axis stays same at 0
 			myRigidBody.velocity = new Vector3 (myRigidBody.velocity.x, jumpSpeed, 0f);
+			//play jump sound
+			jumpSound.Play();
 		}
 
 		//Mathf math function says absolute value i.e. if negative turn positive number
@@ -87,9 +96,7 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "KillPlane") {
-			//gameObject.SetActive (false);
 
-			//transform.position = respawnPosition;
 
 			theLevelManager.Respawn ();
 		}
@@ -113,5 +120,36 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.tag == "MovingPlatform"){
 			transform.parent = null;
 		}
+	}
+
+	public void UpdateBlobSize()
+	{
+		switch (theLevelManager.healthCount)
+		{
+
+		case 3:
+			
+			myAnim.runtimeAnimatorController = anim1;
+			return;
+
+		case 2:
+			
+			myAnim.runtimeAnimatorController = anim2;
+			return;
+
+		case 1:
+			
+			myAnim.runtimeAnimatorController = anim3;
+			return;
+
+		case 0:
+			
+			return;
+
+		default:
+			
+			return;
+		}
+
 	}
 }

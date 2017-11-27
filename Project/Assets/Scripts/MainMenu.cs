@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour {
 
 	public string firstLevel;
-	public string levelSelect;
+	public string mainMenu;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +19,7 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void NewGame(){
+		Time.timeScale = 1;
 		SceneManager.LoadScene (firstLevel);
 	}
 
@@ -26,7 +27,7 @@ public class MainMenu : MonoBehaviour {
 		Application.Quit ();
 	}
 
-	public void ContinueGame(){
-		SceneManager.LoadScene (levelSelect);
+	public void Menu(){
+		SceneManager.LoadScene (mainMenu);
 	}
 }
