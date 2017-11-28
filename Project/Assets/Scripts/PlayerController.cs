@@ -23,16 +23,13 @@ public class PlayerController : MonoBehaviour {
 	//declare an animator for sprites
 	private Animator myAnim;
 
-	public RuntimeAnimatorController anim1;
-	public RuntimeAnimatorController anim2;
-	public RuntimeAnimatorController anim3;
-
 	//variable for checkpoint position
 	public Vector3 respawnPosition;
 
 	//instance of LevelManager
 	public LevelManager theLevelManager;
 
+	//declare AudioSource for jump sound
 	public AudioSource jumpSound;
 
 
@@ -93,6 +90,7 @@ public class PlayerController : MonoBehaviour {
 		myAnim.SetBool ("Grounded", isGrounded);
 	}
 
+	//this method allows the player to respawn if touched by the kill plane attached to camera or to activate a checkpoint
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "KillPlane") {
@@ -107,6 +105,7 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	//this method makes the player a child of the moving platform
 	void OnCollisionEnter2D(Collision2D other)
 	{
 		if (other.gameObject.tag == "MovingPlatform") {
@@ -115,41 +114,12 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	//this method removes the player from child of moving platform
 	void OnCollisionExit2D(Collision2D other)
 	{
 		if(other.gameObject.tag == "MovingPlatform"){
 			transform.parent = null;
 		}
 	}
-
-	public void UpdateBlobSize()
-	{
-		switch (theLevelManager.healthCount)
-		{
-
-		case 3:
-			
-			myAnim.runtimeAnimatorController = anim1;
-			return;
-
-		case 2:
-			
-			myAnim.runtimeAnimatorController = anim2;
-			return;
-
-		case 1:
-			
-			myAnim.runtimeAnimatorController = anim3;
-			return;
-
-		case 0:
-			
-			return;
-
-		default:
-			
-			return;
-		}
-
-	}
+		
 }
